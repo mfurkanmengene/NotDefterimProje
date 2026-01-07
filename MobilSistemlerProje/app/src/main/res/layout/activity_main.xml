@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005461"
+    android:padding="16dp"
+    android:paddingTop="120dp">
+
+    <!-- Arama -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:hint="Ara..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:textColor="#0F172A"
+        android:textColorHint="#CFEDEC" />
+
+    <!-- Not metni -->
+    <EditText
+        android:id="@+id/etNote"
+        android:hint="Not metnini girin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:textColor="#0F172A"
+        android:textColorHint="#2A8D8B" />
+
+    <!-- Kategori seçimi -->
+    <Spinner
+        android:id="@+id/spCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF" />
+
+    <!-- Tarih gösterimi -->
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#CFEDEC"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Butonlar -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnPickDate"
+            android:text="Tarih Seç"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00B7B5"
+            android:textColor="#FFFFFF"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Kaydet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00B7B5"
+            android:textColor="#FFFFFF"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+    </LinearLayout>
+
+    <!-- Ayraç -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1B6D73"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Liste -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#1B6D73"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
