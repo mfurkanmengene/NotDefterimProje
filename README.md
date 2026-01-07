@@ -24,7 +24,7 @@ Android platformu için kategori ve tarih bazlı not yönetim uygulaması.
 - **Veritabanı:** SQLite
 - **IDE:** Android Studio
 
-## 📂 Proje Yapısı
+## Proje Yapısı
 
 ```
 app/src/main/
@@ -36,16 +36,7 @@ app/src/main/
     └── item_note.xml        # Liste item
 ```
 
-## 💻 Kurulum
 
-1. Repository'yi klonlayın:
-```bash
-git clone https://github.com/kullaniciadi/not-defteri-uygulamasi.git
-```
-
-2. Android Studio'da açın
-
-3. Run butonuna basın
 
 ##  Kullanım
 
